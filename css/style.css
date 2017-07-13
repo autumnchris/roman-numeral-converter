@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background-color: #333;
+  color: #d9d9d9;
+  letter-spacing: 3px;
+  min-height: 100%;
+  padding: 3% 0 60px;
+  position: relative;
+}
+
+h1 {
+  font: 1.2em/28px Adamina, serif;
+}
+
+h2 {
+  font: 1em/24px Adamina, serif;
+}
+
+#entered-num {
+  font-size: 1.5em;
+  height: 150%;
+  margin: 8% auto;
+  max-width: 150px;
+}
+
+.roman-numeral {
+  color: #d9d9d9;
+  font: 6vw Adamina, serif;
+  letter-spacing: 8px;
+}
+
+footer {
+  background-color: #d9d9d9;
+  bottom: 0;
+  color: #333;
+  font-size: 1.2rem;
+  left: 0;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 6px 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+footer a,
+footer a:visited,
+footer a:active,
+footer a:hover {
+  color: #006680;
+}
+
+@media only screen and (min-width: 600px) {
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+}
