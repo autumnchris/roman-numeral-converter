@@ -49,8 +49,9 @@ footer {
 
 footer a,
 footer a:visited,
+footer a:hover,
 footer a:active,
-footer a:hover {
+footer a:focus {
   color: #006680;
 }
 
@@ -63,5 +64,4 @@ footer a:hover {
   h2 {
     font-size: 1.2em;
   }
-
 }
