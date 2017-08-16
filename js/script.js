@@ -28,7 +28,7 @@ function convertToRoman() {
     $('output').addClass('roman-numeral').removeClass('alert alert-warning').html(result);
   }
   else if (num === '') {
-    $('output').removeClass('roman-numeral alert alert-warning').html('');
+    $('output').removeClass('roman-numeral alert alert-warning').empty();
   }
   else {
     $('output').addClass('alert alert-warning').removeClass('roman-numeral').html('<span class="fa fa-warning fa-lg fa-fw"></span> Please enter a whole number that is greater than 0 and less than 4000.');
