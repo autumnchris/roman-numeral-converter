@@ -7,7 +7,7 @@ A Roman Numeral Converter web app I made based on [my solution](https://github.c
 ## Built With
 * JavaScript
 * [jQuery](https://jquery.com)
-* [Bootstrap CSS](http://getbootstrap.com/css)
+* [Bootstrap 3 CSS](https://getbootstrap.com/docs/3.3/css)
 * HTML5
 * CSS3
 
