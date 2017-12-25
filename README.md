@@ -15,4 +15,4 @@ A Roman Numeral Converter web app I built based on [my solution](https://github.
 
 ## Demo
 
-View project [here](https://autumnchris.github.io/roman-numeral-converter).
+View project demo at [https://autumnchris.github.io/roman-numeral-converter](https://autumnchris.github.io/roman-numeral-converter).
