@@ -18,7 +18,7 @@ function convertToRoman() {
     I: 1
   };
 
-  if (num >= 1 && num <= 3999) {
+  if (num.charCodeAt(num.length - 1) >= 48 && num.charCodeAt(num.length - 1) <= 57 && num >= 1 && num <= 3999) {
     for (var i in obj) {
       while (num >= obj[i]) {
         result += i;
