@@ -11,7 +11,7 @@ A Roman Numeral Converter web app I built based on [my solution](https://github.
 * HTML5
 * CSS3
 * [Google Fonts](https://fonts.google.com)
-* [Font Awesome](http://fontawesome.io)
+* [Font Awesome](https://fontawesome.com)
 
 ## Demo
 
