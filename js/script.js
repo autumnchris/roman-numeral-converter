@@ -27,7 +27,7 @@ function convertToRoman() {
     }
     $('output').addClass('roman-numeral').removeClass('alert alert-warning').html(result);
   }
-  else if (num === '') {
+  else if (!num) {
     $('output').removeClass('roman-numeral alert alert-warning').empty();
   }
   else {
