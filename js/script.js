@@ -1,8 +1,8 @@
 function convertToRoman() {
-
-  var result = '';
-  var num = $('#entered-num').val();
-  var obj = {
+  var i,
+  result = '',
+  num = $('#entered-num').val(),
+  obj = {
     M: 1000,
     CM: 900,
     D: 500,
@@ -19,7 +19,9 @@ function convertToRoman() {
   };
 
   if (num.charCodeAt(num.length - 1) >= 48 && num.charCodeAt(num.length - 1) <= 57 && num >= 1 && num <= 3999) {
-    for (var i in obj) {
+
+    for (i in obj) {
+
       while (num >= obj[i]) {
         result += i;
         num -= obj[i];
