@@ -24,10 +24,20 @@ h2 {
 }
 
 #entered-num {
+  background-color: #595959;
+  border: 1px solid #595959;
+  border-radius: 0;
+  color: #d9d9d9;
   font-size: 1.5em;
   height: 150%;
+  letter-spacing: 2px;
   margin: 8% auto;
   max-width: 150px;
+}
+
+#entered-num:focus {
+  border: 1px solid #fff2cc;
+  box-shadow: none;
 }
 
 .roman-numeral {
@@ -37,9 +47,9 @@ h2 {
 }
 
 footer {
-  background-color: #d9d9d9;
+  background-color: #595959;
   bottom: 0;
-  color: #333;
+  color: #d9d9d9;
   font-size: 1.2rem;
   left: 0;
   letter-spacing: 2px;
@@ -55,7 +65,7 @@ footer a:visited,
 footer a:hover,
 footer a:active,
 footer a:focus {
-  color: #006680;
+  color: #fff2cc;
 }
 
 @media only screen and (min-width: 600px) {
