@@ -1,8 +1,5 @@
 function convertToRoman() {
-  var i,
-  result = '',
-  num = $('#entered-num').val(),
-  obj = {
+  const obj = {
     M: 1000,
     CM: 900,
     D: 500,
@@ -17,6 +14,9 @@ function convertToRoman() {
     IV: 4,
     I: 1
   };
+  let num = $('#entered-num').val();
+  let result = '';
+  let i;
 
   if (num.charCodeAt(num.length - 1) >= 48 && num.charCodeAt(num.length - 1) <= 57 && num >= 1 && num <= 3999) {
 
@@ -33,10 +33,10 @@ function convertToRoman() {
     $('output').removeClass('roman-numeral alert alert-warning').empty();
   }
   else {
-    $('output').addClass('alert alert-warning').removeClass('roman-numeral').html('<span class="fa fa-warning fa-lg fa-fw"></span> Please enter a whole number that is greater than 0 and less than 4000.');
+    $('output').addClass('alert alert-warning').removeClass('roman-numeral').html('<span class="fa fa-warning fa-lg fa-fw"></span> Please enter an integer that is greater than 0 and less than 4000.');
   }
 }
 
-$('#entered-num').on('input', function() {
+$('#entered-num').on('input', () => {
   convertToRoman();
 });
