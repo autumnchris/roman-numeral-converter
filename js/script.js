@@ -27,13 +27,13 @@ function convertToRoman() {
         num -= obj[i];
       }
     }
-    $('output').addClass('roman-numeral').removeClass('alert alert-warning').html(result);
+    $('output').addClass('roman-numeral').removeClass('error').html(result);
   }
   else if (!num) {
-    $('output').removeClass('roman-numeral alert alert-warning').empty();
+    $('output').removeClass('roman-numeral error').empty();
   }
   else {
-    $('output').addClass('alert alert-warning').removeClass('roman-numeral').html('<span class="fa fa-warning fa-lg fa-fw"></span> Please enter an integer that is greater than 0 and less than 4000.');
+    $('output').addClass('error').removeClass('roman-numeral').html('<span class="fa fa-exclamation-triangle fa-lg fa-fw"></span> Please enter an integer that is greater than 0 and less than 4000.');
   }
 }
 

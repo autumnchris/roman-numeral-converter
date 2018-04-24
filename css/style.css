@@ -1,60 +1,83 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
-  height: 100%;
+  background: #333;
 }
 
 body {
-  background-color: #333;
-  color: #d9d9d9;
-  letter-spacing: 3px;
-  min-height: 100%;
-  padding: 3% 0 60px;
-  position: relative;
+  text-align: center;
+}
+
+header {
+  padding-top: 3%;
 }
 
 h1 {
-  font: 1.2em/28px Adamina, serif;
+  color: #d9d9d9;
+  font-family: Adamina, serif;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  line-height: 1.7;
+  margin: 2% 0 1%;
 }
 
 h2 {
-  font: 1em/24px Adamina, serif;
+  color: #d9d9d9;
+  font-family: Adamina, serif;
+  letter-spacing: 3px;
+  line-height: 1.7;
+  margin: 2% 0 1%;
+}
+
+main {
+  padding-bottom: 60px;
 }
 
 #entered-num {
-  background-color: #595959;
+  background: #595959;
   border: 1px solid #595959;
-  border-radius: 0;
   color: #d9d9d9;
-  font-size: 1.5em;
-  height: 150%;
+  display: block;
+  font-size: 1.3rem;
   letter-spacing: 2px;
-  margin: 8% auto;
+  padding: 5px 10px;
+  margin: 6% auto;
   max-width: 150px;
 }
 
 #entered-num:focus {
   border: 1px solid #fff2cc;
-  box-shadow: none;
+  outline: none;
 }
 
 .roman-numeral {
   color: #d9d9d9;
-  font: 6vw Adamina, serif;
+  font-family: Adamina, serif;
+  font-size: 6vw;
   letter-spacing: 8px;
 }
 
+.error {
+  background: #fcf8e3;
+  border: 1px solid #faebcc;
+  border-radius: 3px;
+  color: #8a6d3b;
+  display: block;
+  font-size: 0.9rem;
+  line-height: 20px;
+  margin: 10px auto;
+  max-width: 700px;
+  padding: 15px 10px;
+  text-align: center;
+  width: 100%;
+}
+
 footer {
-  background-color: #595959;
+  background: #595959;
   bottom: 0;
   color: #d9d9d9;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   left: 0;
   letter-spacing: 2px;
-  margin: 0;
-  padding: 12px 0;
+  padding: 14px 0;
   position: absolute;
   right: 0;
   width: 100%;
@@ -71,10 +94,10 @@ footer a:focus {
 @media only screen and (min-width: 600px) {
 
   h1 {
-    font-size: 1.6em;
+    font-size: 1.4rem;
   }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 1.1rem;
   }
 }
