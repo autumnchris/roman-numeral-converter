@@ -18,7 +18,7 @@ function convertToRoman() {
   let result = '';
   let i;
 
-  if (num.charCodeAt(num.length - 1) >= 48 && num.charCodeAt(num.length - 1) <= 57 && num >= 1 && num <= 3999) {
+  if (!isNaN(num) && num >= 1 && num <= 3999) {
 
     for (i in obj) {
 
