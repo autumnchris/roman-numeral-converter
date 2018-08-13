@@ -71,7 +71,7 @@ function convertToRoman() {
     $('output').removeClass('roman-numeral error').empty();
   }
   else {
-    $('output').addClass('error').removeClass('roman-numeral').html('<span class="fa fa-exclamation-triangle fa-lg fa-fw"></span> Please enter an integer that is greater than 0 and less than 4000.');
+    $('output').addClass('error').removeClass('roman-numeral').html('<span class="fa fa-exclamation-circle fa-lg fa-fw"></span> Please enter an integer that is greater than 0 and less than 4000.');
   }
 }
 
