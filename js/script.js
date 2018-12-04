@@ -53,11 +53,11 @@ function convertToRoman() {
           value: 1
       }
   ];
-
+  let result;
   let num = $('#entered-num').val();
 
   if (!isNaN(num) && num >= 1 && num <= 3999) {
-    const result = arr.reduce((acc, key) => {
+    result = arr.reduce((acc, key) => {
 
       while (num >= key.value) {
         acc += key.symbol;
