@@ -1,5 +1,5 @@
 html {
-  background: #333;
+  background: hsl(0, 0%, 20%);
 }
 
 header {
@@ -7,7 +7,7 @@ header {
 }
 
 h1 {
-  color: #d9d9d9;
+  color: hsl(0, 0%, 85%);
   font-family: Adamina, serif;
   font-size: 1.2rem;
   letter-spacing: 3px;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  color: #d9d9d9;
+  color: hsl(0, 0%, 85%);
   font-family: Adamina, serif;
   letter-spacing: 3px;
   line-height: 1.7;
@@ -28,9 +28,9 @@ main {
 }
 
 #entered-num {
-  background: #595959;
-  border: 1px solid #595959;
-  color: #d9d9d9;
+  background: hsl(0, 0%, 35%);
+  border: 1px solid hsl(0, 0%, 35%);
+  color: hsl(0, 0%, 85%);
   display: block;
   font-size: 1.3rem;
   letter-spacing: 2px;
@@ -50,7 +50,7 @@ output {
 }
 
 .roman-numeral {
-  color: #d9d9d9;
+  color: hsl(0, 0%, 85%);
   font-family: Adamina, serif;
   font-size: 6vw;
   letter-spacing: 8px;
@@ -70,9 +70,9 @@ output {
 }
 
 footer {
-  background: #595959;
+  background: hsl(0, 0%, 35%);
   bottom: 0;
-  color: #d9d9d9;
+  color: hsl(0, 0%, 85%);
   font-size: 0.8rem;
   left: 0;
   letter-spacing: 2px;
