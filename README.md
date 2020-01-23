@@ -6,7 +6,6 @@ A Roman Numeral Converter web app I built based on [my solution](https://github.
 
 ## Built With
 * JavaScript
-* [jQuery](https://jquery.com)
 * CSS3
 * HTML5
 * [Google Fonts](https://fonts.google.com)
