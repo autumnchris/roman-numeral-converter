@@ -81,3 +81,5 @@ function convertToRoman() {
 document.getElementById('entered-num').addEventListener('keyup', () => {
   convertToRoman();
 });
+
+document.querySelector('.current-year').innerHTML = new Date().getFullYear();

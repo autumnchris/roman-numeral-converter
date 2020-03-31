@@ -12,7 +12,8 @@ h6,
 form,
 input,
 output,
-a {
+a,
+span {
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -50,4 +51,9 @@ a:focus {
 
 a:hover {
   text-decoration: underline;
+}
+
+span {
+  color: inherit;
+  letter-spacing: inherit;
 }
