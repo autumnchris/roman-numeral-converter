@@ -1,78 +1,35 @@
+/* BASE PAGE STYLES */
+
 html {
+  background: transparent;
+  box-sizing: border-box;
+  color: hsl(0, 0%, 85%);
+  height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+body {
   background: hsl(0, 0%, 20%);
+  min-height: 100%;
+  overscroll-behavior: none;
+  padding: 0 20px;
+  position: relative;
 }
 
 header {
-  padding-top: 3%;
-}
-
-h1 {
-  color: hsl(0, 0%, 85%);
   font-family: Adamina, serif;
-  font-size: 1.2rem;
-  letter-spacing: 3px;
-  line-height: 1.7;
-  margin: 2% 0 1%;
-}
-
-h2 {
-  color: hsl(0, 0%, 85%);
-  font-family: Adamina, serif;
-  letter-spacing: 3px;
-  line-height: 1.7;
-  margin: 2% 0 1%;
+  letter-spacing: 4px;
+  padding: 5% 0;
 }
 
 main {
-  padding-bottom: 60px;
-}
-
-#entered-num {
-  background: hsl(0, 0%, 35%);
-  border: 1px solid hsl(0, 0%, 35%);
-  color: hsl(0, 0%, 85%);
-  display: block;
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-  padding: 5px 10px;
-  margin: 6% auto;
-  max-width: 150px;
-  text-align: left;
-}
-
-#entered-num:focus {
-  border: 1px solid #fff2cc;
-  outline: none;
-}
-
-output {
-  display: block;
-}
-
-.roman-numeral {
-  color: hsl(0, 0%, 85%);
-  font-family: Adamina, serif;
-  font-size: 6vw;
-  letter-spacing: 8px;
-}
-
-.error {
-  background: hsl(349, 96%, 95%);
-  border: 1px solid hsl(349, 96%, 90%);
-  border-radius: 3px;
-  color: hsl(349, 96%, 26%);
-  line-height: 20px;
-  margin: 10px auto;
-  max-width: 700px;
-  padding: 15px 10px;
-  text-align: center;
-  width: 100%;
+  padding-bottom: 6rem;
 }
 
 footer {
   background: hsl(0, 0%, 35%);
   bottom: 0;
-  color: hsl(0, 0%, 85%);
   font-size: 0.8rem;
   left: 0;
   letter-spacing: 2px;
@@ -82,13 +39,113 @@ footer {
   width: 100%;
 }
 
-footer a,
-footer a:visited,
-footer a:hover,
-footer a:active,
-footer a:focus {
-  color: #fff2cc;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  box-sizing: border-box;
+  margin-top: 0;
 }
+
+/* BASE ELEMENT STYLES */
+
+div,
+header,
+main,
+footer,
+p,
+form,
+input {
+  box-sizing: border-box;
+}
+
+input {
+  border: 0;
+  border-radius: 0;
+  padding: 5px 8px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: hsl(0, 0%, 60%);
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: #fff2cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+.message {
+  border-radius: 5px;
+  line-height: 1.55;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px 10px;
+}
+
+/* SPECIFIC ELEMENT STYLES */
+
+h1 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.num-value {
+  background: hsl(0, 0%, 35%);
+  color: hsl(0, 0%, 85%);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  max-width: 150px;
+}
+
+.num-value:focus {
+  border: 1px solid #fff2cc;
+  box-shadow: none;
+}
+
+.result {
+  margin-top: 4%;
+}
+
+.roman-numeral {
+  font-family: Adamina, serif;
+  font-size: 3rem;
+  letter-spacing: 8px;
+}
+
+.error-message {
+  background: hsl(349, 96%, 95%);
+  border: 1px solid hsl(349, 96%, 90%);
+  color: hsl(349, 96%, 26%);
+}
+
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 600px) {
 
@@ -98,5 +155,9 @@ footer a:focus {
 
   h2 {
     font-size: 1.1rem;
+  }
+
+  .roman-numeral {
+    font-size: 6vw;
   }
 }

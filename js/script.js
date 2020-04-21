@@ -54,7 +54,7 @@ function convertToRoman() {
     }
   ];
   let result;
-  let num = document.getElementById('entered-num').value;
+  let num = document.getElementById('num-value').value;
 
   if (!isNaN(num) && num >= 1 && num <= 3999) {
     result = arr.reduce((acc, key) => {
@@ -65,20 +65,17 @@ function convertToRoman() {
       }
       return acc;
     }, '');
-    document.querySelector('output').className = 'roman-numeral';
-    document.querySelector('output').innerHTML = result;
+    document.querySelector('.result').innerHTML = `<div class="roman-numeral">${result}</div>`;
   }
   else if (!num) {
-    document.querySelector('output').className = '';
-    document.querySelector('output').innerHTML = '';
+    document.querySelector('.result').innerHTML = '';
   }
   else {
-    document.querySelector('output').className = 'error';
-    document.querySelector('output').innerHTML = '<span class="fa fa-exclamation-circle fa-lg fa-fw"></span> Please enter an integer that is greater than 0 and less than 4000.';
+    document.querySelector('.result').innerHTML = '<p class="message error-message"><span class="fa fa-exclamation-circle fa-lg fa-fw"></span> Please enter an integer that is greater than 0 and less than 4000.</p>';
   }
 }
 
-document.getElementById('entered-num').addEventListener('keyup', () => {
+document.getElementById('num-value').addEventListener('keyup', () => {
   convertToRoman();
 });
 
