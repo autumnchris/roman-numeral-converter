@@ -8,6 +8,7 @@ A Roman Numeral Converter web app I built based on [my solution](https://github.
 * JavaScript
 * CSS3
 * HTML5
+* [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
 * [Font Awesome](https://fontawesome.com)
 
