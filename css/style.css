@@ -108,12 +108,12 @@ textarea:focus,
 
 h1 {
   font-size: 1.3rem;
-  line-height: 1.8rem;
+  line-height: 1.4;
 }
 
 h2 {
   font-size: 1rem;
-  line-height: 1.6rem;
+  line-height: 1.5;
 }
 
 .num-value {
