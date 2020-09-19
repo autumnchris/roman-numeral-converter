@@ -6,8 +6,10 @@ A Roman Numeral Converter web app I built based on [my solution](https://github.
 
 ## Built With
 * JavaScript
-* CSS3
+* [Sass](http://sass-lang.com)
 * HTML5
+* [Webpack](https://webpack.js.org)
+* [Babel](https://babeljs.io)
 * [Normalize.css](https://necolas.github.io/normalize.css)
 * [Google Fonts](https://fonts.google.com)
 * [Font Awesome](https://fontawesome.com)
@@ -15,3 +17,13 @@ A Roman Numeral Converter web app I built based on [my solution](https://github.
 ## Demo
 
 View project demo at [https://autumnchris.github.io/roman-numeral-converter](https://autumnchris.github.io/roman-numeral-converter).
+
+## Installation
+
+```
+$ git clone https://github.com/autumnchris/roman-numeral-converter.git
+$ cd roman-numeral-converter
+$ npm install
+$ npm start
+```
+Go to `http://localhost:8080`.

@@ -4,26 +4,16 @@
     <meta charset="utf-8">
     <title>Roman Numeral Converter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/style.css">
   </head>
 
   <body>
-    <header>
-      <h1>Roman Numeral Converter</h1>
-      <h2>Convert a number to its Roman Numeral form</h2>
-    </header>
-    <main>
-      <form>
-        <div class="form-group">
-          <input type="text" aria-label="input a whole number" class="num-value" id="num-value" autofocus>
-        </div>
-      </form>
-      <div class="result"></div>
-    </main>
-    <footer>Created by <a href="https://autumnbullard-portfolio.herokuapp.com" target="_blank">Autumn Bullard</a> &copy; <span class="current-year"></span></footer>
-    <script src="js/script.js"></script>
+    <div id="app"></div>
+    <script src="public/bundle.js"></script>
+    <noscript>
+      <p class="message info-message"><span class="fa fa-info-circle fa-lg fa-fw"></span> This site uses JavaScript. Please enable JavaScript in your browser.</p>
+    </noscript>
   </body>
 </html>

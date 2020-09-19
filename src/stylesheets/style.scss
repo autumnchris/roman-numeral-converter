@@ -1,0 +1,165 @@
+@import "variables";
+
+// BASE PAGE STYLES
+
+html {
+  background: transparent;
+  box-sizing: border-box;
+  color: change-color($black, $lightness: 85%);
+  height: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  body {
+    background: change-color($black, $lightness: 20%);
+    min-height: 100%;
+    overscroll-behavior: none;
+    padding: 0 20px;
+    position: relative;
+    header {
+      font-family: Adamina, serif;
+      letter-spacing: 4px;
+      padding: 5% 0;
+    }
+    main {
+      padding-bottom: 6rem;
+    }
+    footer {
+      background: change-color($black, $lightness: 35%);
+      bottom: 0;
+      font-size: 0.8rem;
+      left: 0;
+      letter-spacing: 2px;
+      padding: 14px 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      box-sizing: border-box;
+      margin-top: 0;
+    }
+  }
+}
+
+// BASE ELEMENT STYLES
+
+div,
+header,
+main,
+footer,
+p,
+form,
+input {
+  box-sizing: border-box;
+}
+
+input {
+  border: 0;
+  border-radius: 0;
+  letter-spacing: 1px;
+  padding: 5px 8px;
+  width: 100%;
+  &::placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: $yellow;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a:focus,
+button:focus,
+details:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  box-shadow: 0 0 3px 3px hsla(203, 95%, 62%, 0.8);
+  outline: none;
+}
+
+.message {
+  border-radius: 5px;
+  line-height: 1.55;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 15px 10px;
+}
+
+// SPECIFIC ELEMENT STYLES
+
+h1 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  @media only screen and (min-width: 600px) {
+    font-size: 1.4rem;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.5;
+  @media only screen and (min-width: 600px) {
+    font-size: 1.1rem;
+  }
+}
+
+.num-value {
+  background: change-color($black, $lightness: 35%);
+  color: change-color($black, $lightness: 85%);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  max-width: 150px;
+  &:focus {
+    border: 1px solid $yellow;
+    box-shadow: none;
+  }
+}
+
+.result {
+  margin-top: 4%;
+  .roman-numeral {
+    font-family: Adamina, serif;
+    font-size: 3rem;
+    letter-spacing: 8px;
+    @media only screen and (min-width: 600px) {
+      font-size: 6vw;
+    }
+  }
+}
+
+.error-message {
+  background: change-color($error-red, $lightness: 95%);
+  border: 1px solid change-color($error-red, $lightness: 90%);
+  color: $error-red;
+}
+
+.info-message {
+  background: change-color($info-blue, $lightness: 95%);
+  border: 1px solid change-color($info-blue, $lightness: 90%);
+  color: $info-blue;
+}
+
+noscript .info-message {
+  left: 50%;
+  margin: 0 auto;
+  min-width: 280px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
