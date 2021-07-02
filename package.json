@@ -1,7 +1,7 @@
 {
   "name": "roman-numeral-converter",
   "version": "1.0.0",
-  "description": "A Roman Numeral Converter web app I built based on my solution to the Roman Numeral Converter algorithm on freeCodeCamp.",
+  "description": "A JavaScript app that takes a given standard Arabic number and outputs its Roman numeral form.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
