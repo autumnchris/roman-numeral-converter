@@ -16,7 +16,7 @@ const Converter = (() => {
   function renderErrorMessage() {
     const errorMessage = document.createElement('p');
     errorMessage.classList.add('message', 'error-message');
-    errorMessage.innerHTML = '<span class="fa fa-exclamation-circle fa-lg fa-fw"></span> Please enter an integer that is greater than 0 and less than 4000.';
+    errorMessage.innerHTML = '<span class="fa fa-exclamation-circle fa-lg fa-fw"></span> Please enter an number that is greater than 0 and less than 4000.';
 
     document.querySelector('.result').appendChild(errorMessage);
   }
