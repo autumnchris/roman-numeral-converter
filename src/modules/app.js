@@ -9,7 +9,7 @@ const App = (() => {
       <h2>Convert a number to its Roman Numeral form</h2>
     </header>
     <main>
-      <form>
+      <form novalidate>
         <div class="form-group">
           <input type="text" aria-label="input a positive integer" class="num-value" id="num-value" autofocus />
         </div>

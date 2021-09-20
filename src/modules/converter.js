@@ -97,7 +97,14 @@ const Converter = (() => {
     removeErrorMessage();
 
     if (numValue) {
-      !isNaN(numValue) && numValue >= 1 && numValue <= 3999 ? renderRomanNumeral(convertToRoman(numValue)) : renderErrorMessage();
+
+      if (!isNaN(numValue) && numValue >= 1 && numValue < 4000) {
+        if (Math.floor(numValue) !== numValue) numValue = Math.floor(numValue);
+        renderRomanNumeral(convertToRoman(numValue))
+      }
+      else {
+        renderErrorMessage();
+      }
     }
   }
 
