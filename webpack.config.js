@@ -5,9 +5,9 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'docs'),
     filename: 'index.bundle.js',
-    assetModuleFilename: "assets/[hash][ext][query]"
+    assetModuleFilename: 'assets/[hash][ext][query]'
   },
-  devtool: "eval-cheap-source-map",
+  devtool: 'eval-cheap-source-map',
   devServer: {
     port: 8080,
     static: [{
@@ -17,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
