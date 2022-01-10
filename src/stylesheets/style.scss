@@ -160,6 +160,13 @@ h2 {
   }
 }
 
+.page-not-found-message {
+  font-family: inherit;
+  h1 {
+    font-family: Adamina, serif;
+  }
+}
+
 .error-message {
   background: change-color($error-red, $lightness: 95%);
   border: 1px solid change-color($error-red, $lightness: 90%);
