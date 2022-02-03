@@ -11,7 +11,7 @@ const App = (() => {
     <main>
       <form novalidate>
         <div class="form-group">
-          <input type="text" aria-label="input a positive integer" class="num-value" id="num-value" autofocus />
+          <input type="text" aria-label="input a positive integer" class="num-value" inputmode="numeric" id="num-value" autofocus />
         </div>
       </form>
       <div class="result"></div>
