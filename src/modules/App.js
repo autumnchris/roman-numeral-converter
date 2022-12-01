@@ -18,7 +18,7 @@ const App = (() => {
     </main>
     <footer>Created by <a href="https://autumnchris.github.io/portfolio" target="_blank">Autumn Bullard</a> &copy; ${new Date().getFullYear()}</footer>`;
 
-    document.addEventListener('keyup', event => {
+    document.addEventListener('keydown', event => {
        const element = event.target;
        element.matches('#num-value') ? Converter.displayResult(document.getElementById('num-value').value) : null;
     });
