@@ -2,16 +2,19 @@
 
 // BASE PAGE STYLES
 
-html {
-  background: transparent;
+* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: change-color($black, $lightness: 85%);
+}
+
+html {
+  background: transparent;
   height: 100%;
   letter-spacing: 1px;
   text-align: center;
   body {
     background: change-color($black, $lightness: 20%);
+    color: change-color($black, $lightness: 85%);
     min-height: 100%;
     -ms-scroll-chaining: none;
     overscroll-behavior: none;
@@ -42,46 +45,23 @@ html {
     h4,
     h5,
     h6 {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
       margin-top: 0;
     }
-  }
-}
-
-// BASE ELEMENT STYLES
-
-div,
-header,
-main,
-footer,
-p,
-form,
-input {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-input {
-  border: 0;
-  border-radius: 0;
-  letter-spacing: 1px;
-  padding: 5px 8px;
-  width: 100%;
-  &::-webkit-input-placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-  &::-moz-placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-  &:-ms-input-placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-  &::-ms-input-placeholder {
-    color: change-color($black, $lightness: 60%);
-  }
-  &::placeholder {
-    color: change-color($black, $lightness: 60%);
+    h1 {
+      font-size: 1.3rem;
+      line-height: 1.4;
+      @media all and (min-width: 600px) {
+        font-size: 1.4rem;
+      }
+    }
+    
+    h2 {
+      font-size: 1rem;
+      line-height: 1.5;
+      @media all and (min-width: 600px) {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
 
@@ -109,62 +89,20 @@ textarea:focus,
   outline: none;
 }
 
+.page-not-found-message {
+  font-family: inherit;
+  h1 {
+    font-family: Adamina, serif;
+  }
+}
+
+// Message styles
 .message {
   border-radius: 5px;
   line-height: 1.55;
   margin: 20px auto;
   max-width: 800px;
   padding: 15px 10px;
-}
-
-// SPECIFIC ELEMENT STYLES
-
-h1 {
-  font-size: 1.3rem;
-  line-height: 1.4;
-  @media all and (min-width: 600px) {
-    font-size: 1.4rem;
-  }
-}
-
-h2 {
-  font-size: 1rem;
-  line-height: 1.5;
-  @media all and (min-width: 600px) {
-    font-size: 1.1rem;
-  }
-}
-
-.num-value {
-  background: change-color($black, $lightness: 35%);
-  color: change-color($black, $lightness: 85%);
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-  max-width: 150px;
-  &:focus {
-    border: 1px solid $yellow;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-}
-
-.result {
-  margin-top: 4%;
-  .roman-numeral {
-    font-family: Adamina, serif;
-    font-size: 3rem;
-    letter-spacing: 8px;
-    @media all and (min-width: 600px) {
-      font-size: 6vw;
-    }
-  }
-}
-
-.page-not-found-message {
-  font-family: inherit;
-  h1 {
-    font-family: Adamina, serif;
-  }
 }
 
 .error-message {
@@ -190,3 +128,5 @@ noscript .info-message {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+@import "main";

@@ -1,0 +1,51 @@
+// STYLES FOR PAGE'S MAIN CONTENT
+
+// Form styles
+input {
+  border: 0;
+  border-radius: 0;
+  letter-spacing: 1px;
+  padding: 5px 8px;
+  width: 100%;
+  &::-webkit-input-placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+  &::-moz-placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+  &:-ms-input-placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+  &::-ms-input-placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+  &::placeholder {
+    color: change-color($black, $lightness: 60%);
+  }
+}
+
+.num-value {
+  background: change-color($black, $lightness: 35%);
+  color: change-color($black, $lightness: 85%);
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  max-width: 150px;
+  &:focus {
+    border: 1px solid $yellow;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+// Result styles
+.result {
+  margin-top: 4%;
+  .roman-numeral {
+    font-family: Adamina, serif;
+    font-size: 3rem;
+    letter-spacing: 8px;
+    @media all and (min-width: 600px) {
+      font-size: 6vw;
+    }
+  }
+}
