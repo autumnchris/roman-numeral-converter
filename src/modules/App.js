@@ -9,7 +9,7 @@ const App = (() => {
       <h2>Convert a number to its Roman Numeral form</h2>
     </header>
     <main>
-      <form novalidate>
+      <form class="converter-form" novalidate>
         <div class="form-group">
           <input type="text" aria-label="input a positive integer" class="num-value" inputmode="numeric" id="num-value" autofocus />
         </div>
@@ -21,6 +21,11 @@ const App = (() => {
     document.addEventListener('keyup', event => {
        const element = event.target;
        element.matches('#num-value') ? Converter.displayResult(document.getElementById('num-value').value) : null;
+    });
+
+    document.addEventListener('submit', event => {
+      const element = event.target;
+      element.matches('.converter-form') ? event.preventDefault() : null;
     });
   }
   return {
