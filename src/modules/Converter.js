@@ -1,34 +1,12 @@
-import conversionChart from "../data/conversion-chart";
+import ErrorMessage from './ErrorMessage';
+import conversionChart from '../data/conversion-chart';
 
-const Converter = (() => {
-
-  function renderRomanNumeral(numValue) {
-    const romanNumeral = document.createElement('div');
-    romanNumeral.classList.add('roman-numeral');
-    romanNumeral.innerHTML = numValue;
-
-    document.querySelector('.result').appendChild(romanNumeral);
+class Converter {
+  constructor() {
+    this.errorMessage = new ErrorMessage();
   }
 
-  function removeRomanNumeral() {
-    const romanNumeral = document.querySelector('.roman-numeral');
-    romanNumeral ? document.querySelector('.result').removeChild(romanNumeral) : null;
-  }
-
-  function renderErrorMessage() {
-    const errorMessage = document.createElement('p');
-    errorMessage.classList.add('message', 'error-message');
-    errorMessage.innerHTML = '<span class="fa fa-exclamation-circle fa-lg fa-fw" aria-hidden="true"></span> Please enter a number that is greater than 0 and less than 4000.';
-
-    document.querySelector('.result').appendChild(errorMessage);
-  }
-
-  function removeErrorMessage() {
-    const errorMessage = document.querySelector('.error-message');
-    errorMessage ? document.querySelector('.result').removeChild(errorMessage) : null;
-  }
-
-  function convertToRoman(numValue) {
+  convertToRoman(numValue) {
     let result = conversionChart.reduce((acc, key) => {
 
       while (numValue >= key.value) {
@@ -40,25 +18,46 @@ const Converter = (() => {
     return result;
   }
 
-  function displayResult(numValue) {
-    removeRomanNumeral();
-    removeErrorMessage();
+  displayResult(numValue) {
+    this.removeRomanNumeral('main');
+    this.errorMessage.removeErrorMessage('main');
 
     if (numValue) {
 
       if (!isNaN(numValue) && numValue >= 1 && numValue < 4000) {
         if (Math.floor(numValue) !== numValue) numValue = Math.floor(numValue);
-        renderRomanNumeral(convertToRoman(numValue))
+        this.renderRomanNumeral(this.convertToRoman(numValue), 'main');
       }
       else {
-        renderErrorMessage();
+        this.errorMessage.renderErrorMessage('Please enter a number that is greater than 0 and less than 4000.', 'main');
       }
     }
   }
 
-  return {
-    displayResult
-  };
-})();
+  // DOM methods
+  renderConverterForm(location) {
+    const converterForm = document.createElement('form');
+    converterForm.setAttribute('novalidate', 'true');
+    converterForm.classList.add('converter-form');
+    converterForm.innerHTML = `
+      <div class="form-group">
+        <input type="text" aria-label="input a positive integer" class="num-value" inputmode="numeric" id="num-value" autofocus />
+      </div>
+    `;
+    document.querySelector(location).appendChild(converterForm);
+  }
 
-export { Converter };
+  renderRomanNumeral(numValue, location) {
+    const romanNumeral = document.createElement('div');
+    romanNumeral.classList.add('result');
+    romanNumeral.innerHTML = `<div class="roman-numeral">${numValue}</div>`;
+    document.querySelector(location).appendChild(romanNumeral);
+  }
+
+  removeRomanNumeral(location) {
+    const romanNumeral = document.querySelector(`${location} .result`);
+    romanNumeral ? document.querySelector(location).removeChild(romanNumeral) : null;
+  }
+}
+
+export default Converter;
