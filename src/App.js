@@ -8,9 +8,9 @@ class App {
     this.footer = new Footer();
     this.converter = new Converter();
     this.renderApp();
-    this.events();
   }
 
+  // Event listeners
   events() {
     document.addEventListener('keyup', event => {
       const element = event.target;
@@ -29,6 +29,7 @@ class App {
     this.renderMain('#app');
     this.footer.renderFooter('#app');
     this.converter.renderConverterForm('main');
+    this.events();
   }
 
   renderMain(location) {
