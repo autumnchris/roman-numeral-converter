@@ -41,7 +41,7 @@ class Converter {
     converterForm.classList.add('converter-form');
     converterForm.innerHTML = `
       <div class="form-group">
-        <input type="text" aria-label="input a positive integer" class="num-value" inputmode="numeric" id="num-value" autofocus />
+        <input type="text" aria-label="input a positive integer" class="num-value" inputmode="numeric" id="num-value" autocomplete="off" autofocus />
       </div>
     `;
     document.querySelector(location).appendChild(converterForm);
