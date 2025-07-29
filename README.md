@@ -2,7 +2,7 @@
 
 A JavaScript app that takes a given standard Arabic number and outputs its Roman numeral form.
 
-Inspired by [my solution](https://github.com/autumnchris/freecodecamp-algorithms/blob/main/javascript-algorithms-and-data-structures-projects/roman-numeral-converter.js) to the [Roman Numeral Converter algorithm](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/roman-numeral-converter) as part of the curriculum for the [Legacy JavaScript Algorithms and Data Structures Certification](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures) on [freeCodeCamp](https://www.freecodecamp.org).
+Inspired by the [Build a Roman Numeral Converter challenge](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-roman-numeral-converter-project/build-a-roman-numeral-converter) as part of the curriculum for the [JavaScript Algorithms and Data Structures Certification](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8) on [freeCodeCamp](https://www.freecodecamp.org).
 
 ---
 
